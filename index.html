@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game_repo_one</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+ <div class="game-container">
+      
+      <h3> Un contadino deve attraversare un fiume su una piccola barca <br>
+          non è solo però: tre personaggi lo accompagnano, <br>
+          me c'è spazio per solo per due di loro alla volta! come farà il contadino? 
+      </h3>
+
+      <h1>Scegli la tua opzione:</h1>
+
+      <div class="icons-container">
+     
+        
+         
+          <div class="game-icon" id="sheepIcon" onclick="handleChoiceSelection(this)">
+           <img src="percorso/pecora.png" alt="Pecora" class="hidden"> 
+            <img src="media/Asheep.png" alt="Pecora">
+          </div>
+          
+          <div class="game-icon" id="wolfIcon" onclick="handleChoiceSelection(this)">
+            <img src="percorso/lupo.png" alt="Lupo" class="hidden">
+            <img src="media/Awolf.png" alt="Lupo">
+
+          </div>
+          
+          <div class="game-icon" id="lettuceIcon" onclick="handleChoiceSelection(this)">
+            <img src="percorso/insalata.png" alt="Insalata" class="hidden">
+            <img src="media/Alettuce.png" alt="Insalata">
+             <!-- la class hidden serve a non mostrare l'icona senza una vera immagine 
+             /in quanto percorso/.png non esiste
+             -> ma eliminango quelle righe il codice js smette di funzionare-->
+          </div> 
+         
+        </div>  
+
+      <button id="choiceButton" onclick="confirmChoice()">Conferma Scelta</button>
+
+      <div>
+         <p id="resultText"></p>
+      </div>
+  </div>
+
+
+    <script src="test2.js"></script>
+</body>
+</html>
